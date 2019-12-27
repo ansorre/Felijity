@@ -1,4 +1,4 @@
 # [Felijity](http://felijity.github.com)
 
 
-Fast easy lightweight Java Web Framework for blazing fast websites.
+Fast easy lightweight static website builder for blazing fast websites.
