@@ -19,6 +19,7 @@ package me.as.felijity;
 
 import me.as.felijity.app.Constants;
 import me.as.felijity.app.Felijity;
+import me.as.lib.core.lang.ArrayExtras;
 import me.as.lib.minicli.CLIArgument;
 import me.as.lib.minicli.CLIOption;
 import me.as.lib.minicli.CommandLineHandler;
@@ -30,6 +31,7 @@ import me.as.lib.core.report.Problems;
 import java.util.List;
 
 import static me.as.lib.core.log.DefaultTraceLevels.DEFAULT;
+import static me.as.lib.core.log.LogEngine.logOut;
 import static me.as.lib.core.system.FileSystemExtras.getCanonicalPath;
 
 
