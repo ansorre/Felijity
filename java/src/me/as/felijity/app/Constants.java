@@ -21,11 +21,14 @@ public class Constants
 {
 
  public static final String programName="Felijity";
- public static final int version[]={0, 0, 1};
- public static final String date="2019-Dec-10";
-
+ public static final int version[]={0, 1, 0};
+ public static final String date="2020-Jan-07";
 
  public static final String defaultProjectFileName="felijity-project.config.json";
  public static final String defaultWebsiteFileName="felijity-website.config.json";
+
+
+
+ public static final String versionLine=programName+" \""+version[0]+"."+version[1]+"."+version[2]+"\" "+date;
 
 }

@@ -82,7 +82,13 @@ public class Felijity extends AbstractBuildTool<Felijity>
 
  private void runInteractiveHelpAndExit()
  {
-  logOut.println("runInteractiveHelpAndExit -> StillUnimplemented !!");
+  logOut.println(Constants.versionLine);
+
+  logOut.println("\nto get help for the command line options and arguments run:");
+  logOut.println("felijity --help");
+
+  logOut.println("\nto get help for the commands available run:");
+  logOut.println("felijity help");
  }
 
 

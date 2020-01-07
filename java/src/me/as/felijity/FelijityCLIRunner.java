@@ -36,8 +36,7 @@ import static me.as.lib.core.system.FileSystemExtras.getCanonicalPath;
 public class FelijityCLIRunner
 {
 
- @VersionCLIOption NoOperand<String> version=new NoOperand<>(){{customContent=
-  Constants.programName+" \""+Constants.version[0]+"."+Constants.version[1]+"."+Constants.version[2]+"\" "+Constants.date;}};
+ @VersionCLIOption NoOperand<String> version=new NoOperand<>(){{customContent=Constants.versionLine;}};
 
  @HelpCLIOption NoOperand help;
 
