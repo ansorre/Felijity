@@ -2,8 +2,6 @@
 
 Felijity is a very easy, lightweight static website builder for blazing fast static websites.  
 
-This is a very preliminar/preview version, build instruction will come in a few days.
-
 ## Key points
 
  * CLI: command line based 
