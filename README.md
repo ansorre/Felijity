@@ -1,6 +1,6 @@
 # Felijity
 
-Felijity is a very easy, lightweight static website builder for blazing fast static websites.  
+Felijity is an open source ([Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)), very easy, lightweight static website builder for blazing fast static websites.  
 
 ## Key points
 
