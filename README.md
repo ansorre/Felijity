@@ -13,7 +13,7 @@ Felijity is a very easy, lightweight static website builder for blazing fast sta
 ## How to run 
 
 * Download the [most recent release](https://github.com/ansorre/Felijity/releases/download/0.1.0/Felijity-release-0.1.0.zip).
-* unzip in a folder of your choice, let's assume in &lt;felijity-install-dir&gt; 
+* unzip in a folder of your choice, let's assume in **&lt;felijity-install-dir&gt;** 
 * go in a folder under which you want to create a new project (every project can have many websites)
 * on Unix-like systems (on Windows systems replace .sh with .cmd) execute:
 ``` 
