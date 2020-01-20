@@ -51,6 +51,7 @@ import static me.as.lib.markdown.MarkdownExtras.toMapOfStrings;
 public class PagesBuilder extends AbstractBuilder<PagesBuilderConfiguration>
 {
  // YAML front matter keys
+ public static final String yfmk_enabled              = "enabled";
  public static final String yfmk_pageTemplate         = "pageTemplate";
  public static final String yfmk_pageTitle            = "pageTitle";
  public static final String yfmk_languageId           = "languageId";
@@ -119,7 +120,8 @@ public class PagesBuilder extends AbstractBuilder<PagesBuilderConfiguration>
 
  protected Map<String, String> grantValues(Map<String, String> map)
  {
-  map=grantValue(map, yfmk_pageTemplate, configuration.defaultTemplate);
+  map=grantValue(map, yfmk_enabled, "true");
+  grantValue(map, yfmk_pageTemplate, configuration.defaultTemplate);
   grantValue(map, yfmk_pageTitle, configuration.defaultPageTitle);
   grantValue(map, yfmk_languageId, configuration.defaultLanguageId);
   grantValue(map, yfmk_bodyClass, configuration.defaultBodyClass);
@@ -177,6 +179,11 @@ public class PagesBuilder extends AbstractBuilder<PagesBuilderConfiguration>
   code=MarkdownExtras.parse(code, yamlFrontMatterBlock -> values.element=toMapOfStrings(yamlFrontMatterBlock));
 
   values.element=grantValues(values.element);
+
+  boolean enabled=StringExtras.toBoolean(values.element.get(yfmk_enabled));
+  if (!enabled)
+   return;
+
   String absoluteUrl=values.element.get(yfmk_absoluteUrl);
   String output=getDeployFilePath(rootDir, file, absoluteUrl);
   Website web=manager.getWebsite();
